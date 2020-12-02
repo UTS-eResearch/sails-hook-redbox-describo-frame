@@ -1,0 +1,18 @@
+<!-- Default home page -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,600' rel='stylesheet' type='text/css'>
+
+
+<div class="default-page">
+    <div class="main container clearfix"
+        style="margin: auto">
+        <describo branding="<%= typeof branding == 'undefined'? data.branding : branding %>" portal="<%= typeof portal == 'undefined'? data.portal : portal %>" packageType="workspace"></describo>
+        <%
+        var currentMinute = sails.config.startupMinute;
+        %>
+        <link href="/angular/describo-frame/styles.bundle.css?ts=<%= currentMinute %>" rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="/angular/describo-frame/inline.bundle.js?ts=<%= currentMinute %>"></script>
+        <script type="text/javascript" src="/angular/describo-frame/polyfills.bundle.js?ts=<%= currentMinute %>"></script>
+        <script type="text/javascript" src="/angular/describo-frame/vendor.bundle.js?ts=<%= currentMinute %>"></script>
+        <script type="text/javascript" src="/angular/describo-frame/main.bundle.js?ts=<%= currentMinute %>"></script>
+    </div>
+</div>

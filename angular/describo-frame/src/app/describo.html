@@ -1,0 +1,5 @@
+<div *ngIf="!isLoading">
+  <h3 *ngIf="!iFrameURL">{{ errorMessage }}</h3>
+  <iframe *ngIf="iFrameURL" [src]="iFrameURL" title="Describo" height="100%" width="100%" frameborder="0"
+          style="display: block;background: #edf2f7;border: none;height: 100vh;"></iframe>
+</div>

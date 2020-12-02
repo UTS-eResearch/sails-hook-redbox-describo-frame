@@ -1,0 +1,64 @@
+{
+  "name": "@uts-eresearch/sails-hook-redbox-describo-frame",
+  "version": "0.0.1",
+  "description": "ReDBox plugin for intregrating Describo Online",
+  "main": "index.js",
+  "sails": {
+    "isHook": true
+  },
+  "scripts": {
+    "test": "NODE_ENV=test node_modules/.bin/mocha",
+    "runDev": "docker-compose -f support/development/docker-compose.yml up",
+    "compile:watch": "npm run compile --incremental",
+    "compile": "node_modules/.bin/tsc --project tsconfig.json",
+    "redbox:hook:compile": "source redbox-hook-watch.sh",
+    "redbox:compile": "source redbox-compile.sh",
+    "redbox:grunt": "source redbox-watch-grunt.sh",
+    "redbox:grunt:copy": "source redbox-watch-grunt-copy.sh",
+    "attach": "source redbox-attach.sh",
+    "angular:shared": "source redbox-shared-angular.sh",
+    "angular:install": "source redbox-install-angular.sh",
+    "angular:watch": "source redbox-watch-angular.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:uts-eresearch/sails-hook-redbox-describo-frame.git"
+  },
+  "keywords": [
+    "sails",
+    "hook",
+    "redbox",
+    "provisioner"
+  ],
+  "author": "Moises Sacal Bonequi",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@types/chai": "^4.2.7",
+    "@types/lodash": "^4.14.116",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^10.12.18",
+    "chai": "^4.2.0",
+    "mocha": "^7.2.0",
+    "sails": "^1.2.4",
+    "supertest": "^3.0.0",
+    "ts-node": "^6.2.0",
+    "typescript": "^2.9.2",
+    "typings": "^2.1.1"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "fs-extra": "^8.1.0",
+    "lodash": "4.17.14",
+    "lodash-es": "4.17.14",
+    "moment": "^2.29.1",
+    "ncp": "^2.0.0",
+    "path": "^0.12.7",
+    "path-exists": "^3.0.0",
+    "qs": "^6.9.0",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "rxjs": "6.2.0",
+    "rxjs-compat": "6.2.0",
+    "sails-hook-redbox-hook-config-utils": "git+https://github.com/uts-eresearch/sails-hook-redbox-config-utils.git"
+  }
+}
