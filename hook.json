@@ -1,5 +1,5 @@
 {
-  "angularDest": "./assets/angular/describo-frame",
+  "angularDest": "assets/angular/describo-frame",
   "angularOrigin": "angular/describo-frame/dist",
   "angularTmpDest": ".tmp/public/angular/describo-frame"
 }
