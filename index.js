@@ -1,6 +1,6 @@
 const DescriboFrameController = require('./api/controllers/DescriboFrameController');
 const DescriboFrameService = require('./api/services/DescriboFrameService');
-const auth = require('/auth');
+const auth = require('./auth');
 const { HookConfig } = require('sails-hook-redbox-hook-config-utils');
 const config = require('./hook.json');
 
