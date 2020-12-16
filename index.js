@@ -13,7 +13,7 @@ module.exports = function (sails) {
         await HookConfig.angular({
           hookName: hook.name,
           angularDest: hook.angularDest,
-          angularOrigin: hook.angularDest,
+          angularOrigin: hook.angularOrigin,
           angularTmpDest: hook.angularTmpDest
         });
         HookConfig.views(sails.config.appPath, hook.name);
